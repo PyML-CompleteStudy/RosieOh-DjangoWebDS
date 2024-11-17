@@ -3,14 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Notebook Results</title>
+    <title>파이썬 머신러닝 완벽가이드 - Chapter01</title>
+    <link href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css" rel="stylesheet">
 </head>
 <body>
-    <h1>Notebook Results</h1>
-    <div>
-        {% for result in results %}
-            <pre>{{ result }}</pre>
-        {% endfor %}
+    <!-- Header -->
+    <header class="navbar is-primary">
+        <div class="navbar-brand">
+            <a class="navbar-item has-text-white" href="/">
+                <strong>파이썬 머신러닝 완벽가이드 뽀개기</strong>
+            </a>
+        </div>
+    </header>
+
+    <!-- Main content section -->
+    <div class="container is-fluid">
+        <section class="section">
+            <div class="columns is-centered">
+                <div class="column is-half-tablet is-three-fifths-desktop">
+                    <div class="box">
+                        <h1 class="title has-text-centered">파이썬 머신러닝 완벽가이드 - Chapter01</h1>
+                        <div class="content">
+                            {% for result in results %}
+                                <div class="notification is-light">
+                                    <pre class="has-background-light p-3">{{ result }}</pre>
+                                </div>
+                            {% endfor %}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </div>
+
+    <!-- Footer -->
+    <footer class="footer has-background-dark has-text-white">
+        <div class="content has-text-centered">
+            <p>© 2024 Your Company. All rights reserved.</p>
+            <p>
+                <a href="https://github.com/rosieOh" target="_blank" class="has-text-white">GitHub</a> |
+                <a href="https://www.linkedin.com/in/dhxogns920" target="_blank" class="has-text-white">LinkedIn</a>
+            </p>
+        </div>
+    </footer>
+
 </body>
 </html>
